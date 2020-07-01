@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="661.0" prefWidth="968.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.WeeklyCalender">
+   <children>
+      <ComboBox fx:id="monthChoiceBox" layoutX="221.0" layoutY="622.0" onAction="#selectionCheck" prefWidth="150.0" />
+      <ComboBox fx:id="weekChoiceBox" layoutX="490.0" layoutY="622.0" onAction="#selectionCheck" prefWidth="150.0" />
+      <Button fx:id="backButton" layoutX="877.0" layoutY="622.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <ListView fx:id="tuesdayList" layoutX="167.0" layoutY="58.0" prefHeight="551.0" prefWidth="129.0" />
+      <ListView fx:id="wednesdayList" layoutX="296.0" layoutY="58.0" prefHeight="551.0" prefWidth="129.0" />
+      <ListView fx:id="thursdayList" layoutX="425.0" layoutY="58.0" prefHeight="551.0" prefWidth="129.0" />
+      <ListView fx:id="fridayList" layoutX="554.0" layoutY="58.0" prefHeight="551.0" prefWidth="129.0" />
+      <ListView fx:id="saturdayList" layoutX="683.0" layoutY="58.0" prefHeight="551.0" prefWidth="129.0" />
+      <ListView fx:id="sundayList" layoutX="812.0" layoutY="58.0" prefHeight="551.0" prefWidth="129.0" />
+      <ListView fx:id="mondayList" layoutX="38.0" layoutY="58.0" prefHeight="551.0" prefWidth="129.0" />
+      <Label layoutX="153.0" layoutY="626.0" text="Month" />
+      <Label layoutX="446.0" layoutY="626.0" text="Week" />
+      <Label layoutX="89.0" layoutY="35.0" text="Monday" />
+      <Label layoutX="218.0" layoutY="35.0" text="Tuesday" />
+      <Label layoutX="330.0" layoutY="35.0" text="Wednesday" />
+      <Label layoutX="460.0" layoutY="35.0" text="Thursday" />
+      <Label layoutX="605.0" layoutY="35.0" text="Friday" />
+      <Label layoutX="724.0" layoutY="35.0" text="Saturday" />
+      <Label layoutX="857.0" layoutY="35.0" text="Sunday" />
+   </children>
+</AnchorPane>
